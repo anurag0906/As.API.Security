@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.33829.164
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "As.API.Security.HttpsOnly", "As.API.Security.HttpsOnly\As.API.Security.HttpsOnly.csproj", "{542E744B-198A-4B45-847F-028F8385252E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "As.API.Security.HttpsOnly", "As.API.Security.HttpsOnly\As.API.Security.HttpsOnly.csproj", "{542E744B-198A-4B45-847F-028F8385252E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "As.API.CorsTest", "As.API.CorsTest\As.API.CorsTest.csproj", "{3AE18A21-53D5-4331-86E5-B9C5C3F8868F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "As.API.CorsTest", "As.API.CorsTest\As.API.CorsTest.csproj", "{3AE18A21-53D5-4331-86E5-B9C5C3F8868F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "As.API.ResponseTest", "As.API.ResponseTest\As.API.ResponseTest.csproj", "{F9458603-59CD-43EB-97EE-2D1FE7B9F372}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "As.API.ResponseTest", "As.API.ResponseTest\As.API.ResponseTest.csproj", "{F9458603-59CD-43EB-97EE-2D1FE7B9F372}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Request", "Request", "{E7673F80-9107-408F-A757-5B843B8B05F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Response", "Response", "{1840657C-3CA6-4A5A-B785-A761F873817C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "As.API.RateLimit", "As.API.RateLimit\As.API.RateLimit.csproj", "{7D12C47F-E533-4EBB-8AC9-075F51E83E12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AS.API.RateLimit.Filter", "AS.API.RateLimit.Filter\AS.API.RateLimit.Filter.csproj", "{123A0C24-8DB3-4643-AFA0-0BF4DA65EFE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +35,24 @@ Global
 		{F9458603-59CD-43EB-97EE-2D1FE7B9F372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9458603-59CD-43EB-97EE-2D1FE7B9F372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9458603-59CD-43EB-97EE-2D1FE7B9F372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D12C47F-E533-4EBB-8AC9-075F51E83E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D12C47F-E533-4EBB-8AC9-075F51E83E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D12C47F-E533-4EBB-8AC9-075F51E83E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D12C47F-E533-4EBB-8AC9-075F51E83E12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{123A0C24-8DB3-4643-AFA0-0BF4DA65EFE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{123A0C24-8DB3-4643-AFA0-0BF4DA65EFE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{123A0C24-8DB3-4643-AFA0-0BF4DA65EFE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{123A0C24-8DB3-4643-AFA0-0BF4DA65EFE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{542E744B-198A-4B45-847F-028F8385252E} = {E7673F80-9107-408F-A757-5B843B8B05F5}
+		{3AE18A21-53D5-4331-86E5-B9C5C3F8868F} = {E7673F80-9107-408F-A757-5B843B8B05F5}
+		{F9458603-59CD-43EB-97EE-2D1FE7B9F372} = {1840657C-3CA6-4A5A-B785-A761F873817C}
+		{7D12C47F-E533-4EBB-8AC9-075F51E83E12} = {E7673F80-9107-408F-A757-5B843B8B05F5}
+		{123A0C24-8DB3-4643-AFA0-0BF4DA65EFE1} = {E7673F80-9107-408F-A757-5B843B8B05F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {386F965D-C1EC-40C5-B14F-1BDE7AA927E8}
